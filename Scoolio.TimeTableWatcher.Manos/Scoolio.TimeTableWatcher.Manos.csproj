@@ -1,0 +1,27 @@
+﻿<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>1c05d94c-e475-44bd-9d41-b352fd9fc209</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" />
+    <EmbeddedResource Include="**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AngleSharp">
+      <Version>0.9.9</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.App">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Sdk">
+      <Version>1.0.0-alpha-20161102-4</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
