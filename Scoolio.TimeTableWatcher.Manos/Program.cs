@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World!");
-        var crawler = new ManosCrawler();
+        var crawler = new GymKahlaCrawler();
         crawler.GetTimeTableChanges();
         Console.ReadLine();
     }
